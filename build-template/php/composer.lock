@@ -4,81 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "312206cd9024599f412dbd7cffc51522",
+    "content-hash": "ff135383d47db8cf58e36a145b0949ac",
     "packages": [
         {
-            "name": "php-amqplib/php-amqplib",
-            "version": "v2.10.0",
+            "name": "datto/json-rpc",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-amqplib/php-amqplib.git",
-                "reference": "04e5366f032906d5f716890427e425e71307d3a8"
+                "url": "https://github.com/datto/php-json-rpc.git",
+                "reference": "77edbb6fde5424665c12f8b3a91b778b2b4c9ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/04e5366f032906d5f716890427e425e71307d3a8",
-                "reference": "04e5366f032906d5f716890427e425e71307d3a8",
+                "url": "https://api.github.com/repos/datto/php-json-rpc/zipball/77edbb6fde5424665c12f8b3a91b778b2b4c9ea7",
+                "reference": "77edbb6fde5424665c12f8b3a91b778b2b4c9ea7",
                 "shasum": ""
             },
             "require": {
-                "ext-bcmath": "*",
-                "ext-sockets": "*",
-                "php": ">=5.6"
-            },
-            "replace": {
-                "videlalvaro/php-amqplib": "self.version"
+                "php": ">=7.0.0"
             },
             "require-dev": {
-                "ext-curl": "*",
-                "nategood/httpful": "^0.2.20",
-                "phpdocumentor/phpdocumentor": "dev-master",
-                "phpunit/phpunit": "^5.7|^6.5|^7.0",
-                "squizlabs/php_codesniffer": "^2.5"
+                "phpunit/phpunit": "^6.5"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.10-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "PhpAmqpLib\\": "PhpAmqpLib/"
+                    "Datto\\JsonRpc\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1-or-later"
+                "LGPL-3.0+"
             ],
             "authors": [
                 {
-                    "name": "Alvaro Videla",
-                    "role": "Original Maintainer"
-                },
-                {
-                    "name": "John Kelly",
-                    "role": "Maintainer",
-                    "email": "johnmkelly86@gmail.com"
-                },
-                {
-                    "name": "Raúl Araya",
-                    "role": "Maintainer",
-                    "email": "nubeiro@gmail.com"
-                },
-                {
-                    "name": "Luke Bakken",
-                    "role": "Maintainer",
-                    "email": "luke@bakken.io"
+                    "name": "Spencer Mortensen",
+                    "role": "Developer",
+                    "email": "smortensen@datto.com",
+                    "homepage": "http://spencermortensen.com"
                 }
             ],
-            "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
-            "homepage": "https://github.com/php-amqplib/php-amqplib/",
+            "description": "Fully unit-tested JSON-RPC 2.0 for PHP",
+            "homepage": "http://datto.com",
             "keywords": [
-                "message",
-                "queue",
-                "rabbitmq"
+                "json",
+                "json-rpc",
+                "jsonrpc",
+                "php",
+                "php-json-rpc",
+                "rpc"
             ],
-            "time": "2019-08-08T18:28:18+00:00"
+            "time": "2019-07-26T20:20:13+00:00"
         }
     ],
     "packages-dev": [],

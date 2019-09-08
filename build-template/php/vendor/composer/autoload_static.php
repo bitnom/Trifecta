@@ -7,16 +7,16 @@ namespace Composer\Autoload;
 class ComposerStaticInita70968b3dc159f8038f75f604d5efa22
 {
     public static $prefixLengthsPsr4 = array (
-        'P' => 
+        'D' => 
         array (
-            'PhpAmqpLib\\' => 11,
+            'Datto\\JsonRpc\\' => 14,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PhpAmqpLib\\' => 
+        'Datto\\JsonRpc\\' => 
         array (
-            0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
+            0 => __DIR__ . '/..' . '/datto/json-rpc/src',
         ),
     );
 
