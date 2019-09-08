@@ -1,0 +1,8 @@
+{
+    "name": "trifecta/project",
+    "description": "Trifecta PHP build template.",
+    "type": "project",
+    "require": {
+        "php-amqplib/php-amqplib": "^2.10"
+    }
+}
