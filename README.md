@@ -19,3 +19,10 @@ desktop apps.
 
 On the other hand, it would be nice if web were a build target. That way, apps built with Trifecta could also be
 served over HTTP. I do feel like there should be an HTTP target. It's just difficult to reconcile that with Kivy.
+
+## Todo
+
+Once I have decided on how to handle the UI, a lot will be built here quickly. That's the big ToDo right now:
+Experiment with UI components and decide on that part of the structure. My initial thought is to let the user decide if
+they want to use a Kivy UI or go with HTML5 (NWJS, Cordova, and HTTP). If I can get a decent webview working in Kivy,
+I can remove Cordova altogether.
