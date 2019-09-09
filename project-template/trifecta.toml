@@ -2,11 +2,16 @@
 
 title = "Trifecta Project Definition"
 
-[project-meta]
-    name = "My Trifect Project"
-    version = "0.0.1"
-    url = "https://example.com"
-    license = "gpl-3.0"
+[app]
+    [app.meta]
+        name = "My Trifect Project"
+        version = "0.0.1"
+        url = "https://example.com"
+        license = "gpl-3.0"
+    [app.config]
+        fullscreen = false
+        rpc = true  # reqired for inter-process communication.
+        rpc-port = 42727
 
 [build]
     build-targets = ["linux", "osx", "windows", "android", "ios", "http"]
@@ -14,5 +19,3 @@ title = "Trifecta Project Definition"
     ipx = false  # whether to use pyinstaller ipx compression for dekstop.
     ignore = ["*.git"]  # file/dir patterns to ignore.
     ignore-ext = [ ".git", ".md" ]  # file extensions to ignore.
-    rpc = true  # reqired for inter-process communication.
-    rpc-port = 42727
