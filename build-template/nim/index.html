@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hello, World!</title>
 </head>
 <body>
-test
+Hello, World!
+<br><br>
+<button onclick="api.toggleFullScreen()">toggleFullScreen</button>
+<br>
+<input id="message" type="text" />
+<br>
+<button onclick="api.msg(document.getElementById('message').value)">send message</button>
+<br>
+<button onclick="api.exit()">Exit</button>
+
 </body>
 </html>

@@ -5,6 +5,11 @@ when system.hostOS == "windows" or system.hostOS == "linux" or system.hostOS == 
 
     var cwd = getCurrentDir()
     var wv = newWebView("App", "file://" & cwd & "/index.html")
+    var fullScreen = true
+    wv.bindProcs("api"):
+        proc exit() = wv.terminate()
+        proc toggleFullScreen() = fullScreen = not wv.setFullscreen(fullScreen)
+        proc msg(message: string) = echo(message)
     wv.run()
 
 discard """import asynchttpserver, asyncdispatch, nerve, nerve/web
