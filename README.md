@@ -1,10 +1,11 @@
 # Trifecta
 
-Build framework for cross-platform PHP/HTML5/Python apps glued together with Nim.
+Build framework for cross-platform PHP/HTML5/Python apps glued together with Nim. Trifecta allows you to write code
+once and deploy everywhere, even to your website front/back-ends.
 
 ## Why
 
-I'm always creating cross-platform apps for Android/iOS/Windows/Mac/Linux. To do this, I use:
+I'm always creating cross-platform apps for Android/iOS/Windows/Mac/Linux lately. To do this, I use:
 
 * Nim for low-level systems programming (Very fast binaries).
 * Python for Kivy (Android & iOS), machine learning, and the vast amount of modules.
@@ -12,17 +13,10 @@ I'm always creating cross-platform apps for Android/iOS/Windows/Mac/Linux. To do
 * Apache Cordova for mobile apps with webview UIs.
 * PHP for REST APIs. Trifecta will use PeachPie, also exposing .NET.
 
-I want an easy-to-use build tool that will allow me to quickly mix-match what I need of these for any given project,
-providing a bootstrap for my cross-platform apps. I'm currently trying to decide if NWJS and Cordova should make it
-into this tool. Mostly, I just use Kivy because it provides a cross-platform UI framework for both mobile and
-desktop apps.
-
-On the other hand, it would be nice if web were a build target. That way, apps built with Trifecta could also be
-served over HTTP. I do feel like there should be an HTTP target. It's just difficult to reconcile that with Kivy.
+I want an easy-to-use build tool that will allow me to quickly bootstrap a cross-platform mobile/desktop/web app. I
+want my existing back-end APIs (PHP & Python) to work out-of-the-box. I want to be able to use any or all of my
+favorite programming frameworks in the same app. Trifecta will make this possible.
 
 ## Todo
 
-Once I have decided on how to handle the UI, a lot will be built here quickly. That's the big ToDo right now:
-Experiment with UI components and decide on that part of the structure. My initial thought is to let the user decide if
-they want to use a Kivy UI or go with HTML5 (NWJS, Cordova, and HTTP). If I can get a decent webview working in Kivy,
-I can remove Cordova altogether.
+* Getting a working webview communicating from to/from the RPC server on all platforms.
