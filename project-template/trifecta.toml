@@ -1,0 +1,41 @@
+# Build configuration file for Trifecta project.
+
+title = "Trifecta Project Definition"
+
+[project-meta]
+    name = "My Trifect Project"
+    version = "0.0.1"
+    url = "https://example.com"
+    license = "gpl-3.0"
+
+[targets]
+    [targets.linux]
+        activate = true
+        kivy-gui = true
+        webview-gui = false
+    [targets.osx]
+        activate = false
+        kivy-gui = true
+        webview-gui = false
+    [targets.windows]
+        activate = false
+        kivy-gui = true
+        webview-gui = false
+    [targets.android]
+        activate = false
+        kivy-gui = true
+        webview-gui = false
+    [targets.ios]
+        activate = false
+        kivy-gui = true
+        webview-gui = false
+    [targets.http]
+        activate = false
+        webview-gui = true
+
+[build]
+    ipx = false
+    ignore = ["*.git"]
+    ignore-ext = [ ".git", ".md" ]
+    rpc = true
+    rpc-port = 42727
