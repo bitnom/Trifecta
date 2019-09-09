@@ -19,4 +19,4 @@ favorite programming frameworks in the same app. Trifecta will make this possibl
 
 ## Todo
 
-* Getting a working webview communicating from to/from the RPC server on all platforms.
+* Getting a working webview communicating from to/from the RPC server on mobile.
