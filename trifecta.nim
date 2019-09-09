@@ -11,10 +11,17 @@ var tmpl_php = """
 
 """
 
-var arg_parser = newParser("Trifecta"):
-    flag("-c", "--compile", help="Compile Trifecta app package.")
-    option("-n", "--name", help="Project/App name to output.")
+var p = newParser("Trifecta"):
+    flag("-i", "--init", help="Initialize Trifecta project with a trifecta.toml.")
+    flag("-b", "--build", help="Build the project.")
+    flag("-v", "--version", help="Print this Trifecta's version.")
     run:
-        echo opts.name
-
-arg_parser.run()
+        if opts.init:
+            echo "init"
+        elif opts.build:
+            echo "build"
+        elif opts.version:
+            echo "Trifect v0.0.1"
+        else:
+            echo "No options specified. Use -h for help."
+p.run()
