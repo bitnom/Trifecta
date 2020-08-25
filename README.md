@@ -31,7 +31,7 @@ favorite programming frameworks in the same app. Trifecta will make this possibl
 
 ## Current Status
 
-This framework is not yet stable but it is in active development. Check back frequently.
+This framework is not yet stable but ~~it is in active development~~. Check back frequently.
 
 ## Todo
 
